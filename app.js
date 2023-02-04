@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 const PORT = 4000;
-const HOST = "0.0.0.0";
+const HOST = "127.0.0.1";
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -16,5 +16,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, HOST, () => {
- console.log("App listening on port 8080--");
+ console.log("App listening on port 4000--");
 });
